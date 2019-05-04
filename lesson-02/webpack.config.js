@@ -10,10 +10,16 @@ module.exports = {
 	module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(css|scss|sass)$/,
         use: [
-          'style-loader',
-          'css-loader'
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('dart-sass')
+            }
+          }
         ]
       },
       {

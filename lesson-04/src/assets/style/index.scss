@@ -1,0 +1,10 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	#box {
+		background-color: yellow;
+		background-repeat: no-repeat;
+		transform: translateX(50px);
+	}
+}
