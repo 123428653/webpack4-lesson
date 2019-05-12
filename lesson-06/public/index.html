@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<!-- import cdn css -->
+	<% if(htmlWebpackPlugin.options.cdn) {%>
+		<% for(var css of htmlWebpackPlugin.options.cdn.css) { %>
+			<link rel="stylesheet" href="<%=css%>">
+		<% } %>
+	<% } %>
+</head>
+<body>
+	<div id="box"></div>
+	<!-- import cdn js -->
+	<% if(htmlWebpackPlugin.options.cdn) {%>
+		<% for(var js of htmlWebpackPlugin.options.cdn.js) { %>
+			<script src="<%=js%>"></script>
+		<% } %>
+	<% } %>
+</body>
+</html>
