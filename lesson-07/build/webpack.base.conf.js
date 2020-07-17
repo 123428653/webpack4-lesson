@@ -44,7 +44,7 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         // 指定目录去加载babel-loader，提升运行、打包速度
-        include: [resolve('../src'), resolve('../node_modules/webpack-dev-server/client')],
+        include: [resolve('../src')],
         // 排除目录，提升运行、打包速度
         exclude: file => (
           /node_modules/.test(file) &&
