@@ -38,7 +38,7 @@ module.exports = {
     // 'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'linebreak-style': [0, 'error', 'windows'],
-    // indent: ['error', 4], // error类型，缩进4个空格
+    indent: ['error', 2], // error类型，缩进4个空格
     'space-before-function-paren': 0, // 在函数左括号的前面是否有空格
     // 'eol-last': 0, // 不检测新文件末尾是否有空行
     // semi: ['error', 'always'], // 必须在语句后面加分号
